@@ -1,0 +1,109 @@
+#home {
+    background: #e2f0fe;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+
+    section {
+        background-color: #5886D1;
+        border-radius: 5px;
+        padding-left: $md;
+        padding-right: $md;
+        height: 80%;
+        width: 35%;
+    }
+
+    .cube {
+        font-size: 8rem;
+        color: $orange;
+
+    }
+
+    h1 {
+        font-size: $lg;
+        font-weight: 400;
+        text-align: center;
+        color: $off-white;
+        margin-bottom: $md;
+    }
+
+    .play-button-container {
+        width: 100%;
+    }
+
+    a.play-button {
+        background-color: #d8a42a;
+        border-radius: $button-radius;
+        color: #e2f0fe;
+        display: block;
+        cursor: pointer;
+        padding: $normal;
+        text-align: center;
+        transition: 0.3s lenear all;
+    }
+
+    a.play-button:hover {
+        background-color: darken($red, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: $lg;
+    }
+
+    #mainLogo {
+        width: 250px;
+        margin-top: 75px;
+    }
+
+    #login-button {
+        background-color: $red;
+    }
+
+    #login-button:hover {
+        background-color: darken($red, 10%);
+        box-shadow: $shadow;
+    }
+
+    #signup-button {
+        background-color: $blue;
+    }
+
+    #signup-button:hover {
+        background-color: darken($blue, 10%);
+        box-shadow: $shadow;
+    }
+    
+
+    .auth-container .auth-buttons {
+        color: #fff;
+        cursor: pointer;
+        border-radius: $button-radius;
+        padding:  $normal;
+        text-align: center;
+        transition: 0.3s lenear all;
+        width: 45%;
+    }
+
+       
+}
+
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        section {
+            padding: 0 $normal;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
