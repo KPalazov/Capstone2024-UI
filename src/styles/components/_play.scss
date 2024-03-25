@@ -1,5 +1,5 @@
 .questions {
-    background: #e2f0fe;
+    background-color: $off-white;
     border-left: 5px solid $blue;
     width: 80%;
     margin: $lg auto 0 auto;
@@ -13,7 +13,6 @@
     .lifeline-container {
         display: flex;
         justify-content: space-between;
-        margin-bottom: $sm;
     }
 
     .lifeline {
@@ -21,9 +20,19 @@
         top: -3px;
     }
 
+    .lifeline-icon {
+        color: $green;
+        cursor: pointer;
+    }
+
+    .lifeline-icon:hover {
+        background: none;
+        color: darken($orange, 10%);
+    }
+
     h5 {
         font-size: 1.2rem;
-        margin-bottom: $lg;
+        margin-bottom: lg;
         line-height: 1.5;
         text-align: center;
     }
@@ -34,19 +43,19 @@
     }
 
     .option {
-        background-color: #d8a42a;
+        background-color: $blue;
         border-radius: $button-radius;
         color: $white;
         cursor: pointer;
         margin: $md auto;
-        padding: $sm;
+        padding: $normal;
         transition: 0.3s linear all;
         text-align: center;
         width: 90%;
     }
 
     .option:hover {
-        background-color: darken($red, 10%);
+        background-color: darken($blue, 20%);
     }
 }
 
@@ -70,29 +79,29 @@
 .button-container button:first-child {
     background-color: darken($blue, 10%);
     box-shadow: $shadow;
-    transition: 0.2s linear all;
+    transition: 0.2s linear all
 }
 
 .button-container button:first-child:hover {
-    background-color: darken($red, 20%);
+    background-color: darken($blue, 20%);
 }
 
 .button-container button:nth-child(2) {
-    background-color: darken($blue, 10%);
+    background-color: $green;
     box-shadow: $shadow;
-    transition: 0.2s linear all;
+    transition: 0.2s linear all
 }
 
 .button-container button:nth-child(2):hover {
-    background-color: darken($red, 20%);
+    background-color: darken($green, 10%);
 }
 
 .button-container button:last-child {
-    background-color: darken($red, 10%);
+    background-color: $red;
     box-shadow: $shadow;
-    transition: 0.2s linear all;
+    transition: 0.2s linear all
 }
 
 .button-container button:last-child:hover {
-    background-color: darken($red,20%);
+    background-color: darken($red, 10%);
 }
