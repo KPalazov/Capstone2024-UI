@@ -40,7 +40,7 @@ const QuizInstructions = () => (
                 <li>
                     Using a hint by clicking the icon
                     <span className="mdi mdi-lightbulb-on mdi-24px lifeline-icon"></span>
-                    will remove one wrong answer leaving two wrong answers and one correct answer. You can use as many hints as possible on a single question.
+                    will remove one wrong answer leaving two wrong answers and one correct answer. You can use as many hints as allowed.
                     <img src={hints} alt="Quiz App hints example" />
                 </li>
                 <li>Feel free to quit (or retire from) the game at any time. In that case your score will be revealed afterwards.</li>
