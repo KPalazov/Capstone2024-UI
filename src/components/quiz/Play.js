@@ -6,10 +6,6 @@ import classnames from 'classnames';
 import questions from '../../questions.json';
 import isEmpty from '../../utils/is-empty';
 
-import correctNotification from '../../assets/audio/correct-answer.mp3';
-import wrongNotification from '../../assets/audio/wrong-answer.mp3';
-import buttonSound from '../../assets/audio/button-sound.mp3';
-
 class Play extends Component {
     constructor (props) {
         super(props);
@@ -34,9 +30,6 @@ class Play extends Component {
             time: {}
         };
         this.interval = null;
-        this.correctSound = React.createRef();
-        this.wrongSound = React.createRef();
-        this.buttonSound = React.createRef();
     }
 
     componentDidMount () {
@@ -74,19 +67,16 @@ class Play extends Component {
     handleOptionClick = (e) => {
         if (e.target.innerHTML.toLowerCase() === this.state.answer.toLowerCase()) {
             this.correctTimeout = setTimeout(() => {
-                this.correctSound.current.play();
             }, 500);
             this.correctAnswer();
         } else {
             this.wrongTimeout = setTimeout(() => {
-                this.wrongSound.current.play();
             }, 500);
             this.wrongAnswer();
         }
     }
 
     handleNextButtonClick = () => {
-        this.playButtonSound();
         if (this.state.nextQuestion !== undefined) {
             this.setState(prevState => ({
                 currentQuestionIndex: prevState.currentQuestionIndex + 1
@@ -97,7 +87,6 @@ class Play extends Component {
     };
 
     handlePreviousButtonClick = () => {
-        this.playButtonSound();
         if (this.state.previousQuestion !== undefined) {
             this.setState(prevState => ({
                 currentQuestionIndex: prevState.currentQuestionIndex - 1
@@ -108,7 +97,6 @@ class Play extends Component {
     };
 
     handleQuitButtonClick = () => {
-        this.playButtonSound();
         if (window.confirm('Are you sure you want to quit?')) {
             this.props.history.push('/');
         }
@@ -132,10 +120,6 @@ class Play extends Component {
                 break;
         }
         
-    };
-
-    playButtonSound = () => {
-        this.buttonSound.current.play();
     };
 
     correctAnswer = () => {
@@ -347,11 +331,6 @@ class Play extends Component {
         return (
             <Fragment>
                 <Helmet><title>Quiz Page</title></Helmet>
-                <Fragment>
-                    <audio ref={this.correctSound} src={correctNotification}></audio>
-                    <audio ref={this.wrongSound} src={wrongNotification}></audio>
-                    <audio ref={this.buttonSound} src={buttonSound}></audio>
-                </Fragment>
                 <div className="questions">
                     <h2>Quiz Mode</h2>
                     <div className="lifeline-container">
