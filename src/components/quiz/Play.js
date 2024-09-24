@@ -96,6 +96,8 @@ class Play extends Component {
         }
     };
 
+    
+
     handleQuitButtonClick = () => {
         if (window.confirm('Are you sure you want to quit?')) {
             this.props.history.push('/');
@@ -138,6 +140,7 @@ class Play extends Component {
                 this.endGame();
             } else {
                 this.displayQuestions(this.state.questions, this.state.currentQuestion, this.state.nextQuestion, this.state.previousQuestion);
+                
             }
         });
     }
@@ -150,6 +153,7 @@ class Play extends Component {
             displayLength: 1500
         });
         this.setState(prevState => ({
+            
             wrongAnswers: prevState.wrongAnswers + 1,
             currentQuestionIndex: prevState.currentQuestionIndex + 1,
             numberOfAnsweredQuestions: prevState.numberOfAnsweredQuestions + 1

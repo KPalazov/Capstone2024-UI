@@ -1,136 +1,122 @@
 [
     {
-        "question": "What temperature does water boil at?",
-        "optionA": "50 degrees Celcius",
-        "optionB": "25 degrees Celcius",
-        "optionC": "100 degrees Celcius",
-        "optionD": "150 degrees Celcius",
-        "answer": "100 degrees Celcius"
+        "question": "What annotation is commonly used to denote a controller class in Spring Boot?",
+        "optionA": "@Controller",
+        "optionB": "@RestController",
+        "optionC": "@Service",
+        "optionD": "@Component",
+        "answer": "@RestController"
     },
-
     {
-        "question": "Who wrote Julius Caesar, Macbeth and Hamlet?",
-        "optionA": "Wole Soyinka",
-        "optionB": "William Shakespeare",
-        "optionC": "Ngozi Chimamanda Adichie",
-        "optionD": "Dan Brown",
-        "answer": "William Shakespeare"
+        "question": "Which dependency injection framework is commonly used in Spring Boot applications?",
+        "optionA": "Guice",
+        "optionB": "Dagger",
+        "optionC": "CDI",
+        "optionD": "Spring Framework",
+        "answer": "Spring Framework"
     },
-
     {
-        "question": "What did the crocodile swallow in Peter Pan?",
-        "optionA": "A Book",
-        "optionB": "A Computer",
-        "optionC": "A pair of shoes",
-        "optionD": "Alarm Clock",
-        "answer": "Alarm Clock"
+        "question": "What annotation is used to define a Spring Boot application's main class?",
+        "optionA": "@MainApplication",
+        "optionB": "@SpringBootApplication",
+        "optionC": "@BootMain",
+        "optionD": "@SpringMain",
+        "answer": "@SpringBootApplication"
     },
-
     {
-        "question": "Which is the only mammal that can’t jump?",
-        "optionA": "Dog",
-        "optionB": "Elephant",
-        "optionC": "Goat",
-        "optionD": "Lion",
-        "answer": "Elephant"
+        "question": "What is the default embedded servlet container used in Spring Boot?",
+        "optionA": "Tomcat",
+        "optionB": "Jetty",
+        "optionC": "Undertow",
+        "optionD": "GlassFish",
+        "answer": "Tomcat"
     },
-
     {
-        "question": "Who lived at 221B, Baker Street, London?",
-        "optionA": "Tony Stark",
-        "optionB": "Morgan Freeman",
-        "optionC": "Sherlock Holmes",
-        "optionD": "Samuel L. Jackson",
-        "answer": "Sherlock Holmes"
+        "question": "What annotation is used to inject a property value into a Spring Boot bean?",
+        "optionA": "@Value",
+        "optionB": "@InjectProperty",
+        "optionC": "@PropertyInjection",
+        "optionD": "@Autowired",
+        "answer": "@Value"
     },
-
     {
-        "question": "What colour is a panda?",
-        "optionA": "Green and Yellow",
-        "optionB": "Blue and Red",
-        "optionC": "Green and White",
-        "optionD": "Black and White",
-        "answer": "Black and White"
+        "question": "What annotation is used to enable Spring Data JPA repositories in Spring Boot?",
+        "optionA": "@EnableJpaRepositories",
+        "optionB": "@EnableDataJpa",
+        "optionC": "@EnableRepositories",
+        "optionD": "@EnableJpaRepository",
+        "answer": "@EnableJpaRepositories"
     },
-
     {
-        "question": "Where is the smallest bone in the human body?",
-        "optionA": "The Chest",
-        "optionB": "The Ear",
-        "optionC": "The Legs",
-        "optionD": "The Hands",
-        "answer": "The Ear"
+        "question": "What is the default logging framework used in Spring Boot?",
+        "optionA": "Log4j",
+        "optionB": "SLF4J",
+        "optionC": "JUL (java.util.logging)",
+        "optionD": "Logback",
+        "answer": "Logback"
     },
-
     {
-        "question": "What does the roman numeral C represent?",
-        "optionA": "100",
-        "optionB": "10",
-        "optionC": "10,000",
-        "optionD": "1,000,000",
-        "answer": "100"
+        "question": "What annotation is used to specify the primary bean to be injected when there are multiple beans of the same type?",
+        "optionA": "@Primary",
+        "optionB": "@MainBean",
+        "optionC": "@Preferred",
+        "optionD": "@Main",
+        "answer": "@Primary"
     },
-
     {
-        "question": "What takes place in Hong Kong's Happy Valley?",
-        "optionA": "Chicken Wrestling",
-        "optionB": "Horse racing",
-        "optionC": "Street Racing",
-        "optionD": "Arm Wrestling",
-        "answer": "Horse racing"
+        "question": "What is the purpose of the @SpringBootTest annotation in Spring Boot?",
+        "optionA": "To specify properties for the application",
+        "optionB": "To enable JUnit testing for the application",
+        "optionC": "To define the main class of the application",
+        "optionD": "To bootstrap the application context for integration tests",
+        "answer": "To bootstrap the application context for integration tests"
     },
-
     {
-        "question": "Who painted the Mona Lisa?",
-        "optionA": "Alexander Graham Bell",
-        "optionB": "Sir Isaac Newton",
-        "optionC": "Leonardo Da Vinci",
-        "optionD": "Albert Einstein",
-        "answer": "Leonardo Da Vinci"
+        "question": "What annotation is used to define a bean in Spring Boot?",
+        "optionA": "@DefineBean",
+        "optionB": "@BeanDefinition",
+        "optionC": "@Component",
+        "optionD": "@DefineComponent",
+        "answer": "@Component"
     },
-
     {
-        "question": "What’s the most important book in the Moslem religion?",
-        "optionA": "The Koran",
-        "optionB": "The Dictionary",
-        "optionC": "The Bible",
-        "optionD": "The Chemistry text Book",
-        "answer": "The Koran"
+        "question": "What annotation is used to mark a method to handle HTTP GET requests in a Spring Boot RESTful controller?",
+        "optionA": "@GetMapping",
+        "optionB": "@RequestMethod",
+        "optionC": "@HandleGet",
+        "optionD": "@RequestHandler",
+        "answer": "@GetMapping"
     },
-
     {
-        "question": "What’s the capital of Ethiopia?",
-        "optionA": "Cape Town",
-        "optionB": "San Francisco",
-        "optionC": "Abuja",
-        "optionD": "Syndey",
-        "answer": "Addis Ababa"
+        "question": "Which Spring Boot starter dependency is commonly used for handling data access with JPA?",
+        "optionA": "spring-boot-starter-web",
+        "optionB": "spring-boot-starter-data-jpa",
+        "optionC": "spring-boot-starter-security",
+        "optionD": "spring-boot-starter-test",
+        "answer": "spring-boot-starter-data-jpa"
     },
-
     {
-        "question": "How many squares are there on a chess board?",
-        "optionA": "128",
-        "optionB": "64",
-        "optionC": "32",
-        "optionD": "256",
-        "answer": "64"
+        "question": "What annotation is used to configure logging levels in Spring Boot applications?",
+        "optionA": "@LogConfig",
+        "optionB": "@LogLevels",
+        "optionC": "@LogLevelConfig",
+        "optionD": "@Slf4j",
+        "answer": "@Slf4j"
     },
-
     {
-        "question": "Who invented the electric light bulb?",
-        "optionA": "Tom Cruise",
-        "optionB": "Barack Obama",
-        "optionC": "Wole Soyinka",
-        "optionD": "Thomas Edison",
-        "answer": "Thomas Edison"
+        "question": "Which of the following is NOT a valid stereotype annotation in Spring Boot?",
+        "optionA": "@Component",
+        "optionB": "@Controller",
+        "optionC": "@Repository",
+        "optionD": "@ServiceBean",
+        "answer": "@ServiceBean"
     },
-
     {
-        "question": "What are the first three words of the bible?",
-        "optionA": "be with everyone",
-        "optionB": "Again Jesus asked",
-        "optionC": "In the beginning",
-        "optionD": "At that time",
-        "answer": "In the beginning"
+        "question": "What annotation is used to enable automatic configuration and component scanning in Spring Boot applications?",
+        "optionA": "@EnableAutoConfig",
+        "optionB": "@EnableComponentScan",
+        "optionC": "@EnableConfiguration",
+        "optionD": "@SpringBootApplication",
+        "answer": "@SpringBootApplication"
     }
 ]

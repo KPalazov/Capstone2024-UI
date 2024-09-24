@@ -1,5 +1,5 @@
 #home {
-    background-image: url('../../assets/img/background.jpg');
+    background-image: url('../../assets/img/sheridan.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -53,6 +53,601 @@
         display: flex;
         justify-content: space-between;
         margin-top: $lg;
+    }
+
+    #login-button {
+        background-color: $red;
+    }
+    #login-button:hover {
+        background-color: darken($red, 10%);
+        box-shadow: $shadow;
+    }
+    
+    #signup-button {
+        background-color: $blue;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    #signup-button:hover {
+        background-color: darken($blue, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container .auth-buttons {
+        color: #fff;
+        cursor: pointer;
+        border-radius: $button-radius;
+        padding: $normal 0;
+        text-align: center;
+        transition: 0.3s linear all;
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home section {
+        padding: 0 $normal;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//Login CSS Change this to own file later
+#login {
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      nav ul li a:hover {
+        color: #ffd700; /* Change color on hover */
+      }
+
+    section {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        padding-left: $md;
+        padding-right: $md;
+        height: 80%;
+        width: 35%;
+    }
+
+    .cube {
+        font-size: 8rem;
+        color: $orange;
+    }
+
+    h1 {
+        font-size: $lg;
+        font-weight: 400;
+        text-align: center;
+        color: $off-white;
+    }
+
+    .play-button-container {
+        width: 100%;
+    }
+
+    a.play-button {
+        background-color: $green;
+        border-radius: $button-radius;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        padding: $normal;
+        text-align: center;
+        transition: 0.3s linear all;
+    }
+
+    a.play-button:hover {
+        background-color: darken($green, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: $lg; 
+        //margin-bottom: 10px;
+        //text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #login-button {
+        background-color: $red;
+    }
+    #login-button:hover {
+        background-color: darken($red, 10%);
+        box-shadow: $shadow;
+    }
+    
+    #signup-button {
+        background-color: $blue;
+    }
+    #signup-button:hover {
+        background-color: darken($blue, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container .auth-buttons {
+        color: #fff;
+        cursor: pointer;
+        border-radius: $button-radius;
+        padding: $normal 0;
+        text-align: center;
+        transition: 0.3s linear all;
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home section {
+        padding: 0 $normal;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//Users CSS Change this to own file later
+#users {
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+
+    .table-container {
+        width: 100%;
+        max-height: 50px; /* Adjust the maximum height as needed */
+        overflow-y: scroll;
+    }
+    
+    .user-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .user-table th, .user-table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    
+    .user-table th {
+        background-color: #f2f2f2;
+    }
+
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      nav ul li a:hover {
+        color: #ffd700; /* Change color on hover */
+      }
+
+    section {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        padding-left: $md;
+        padding-right: $md;
+        height: 100%;
+        width: 35%;
+    }
+
+    .cube {
+        font-size: 8rem;
+        color: $orange;
+    }
+
+    h1 {
+        font-size: $lg;
+        font-weight: 400;
+        text-align: center;
+        color: $off-white;
+    }
+
+    .play-button-container {
+        width: 100%;
+    }
+
+    a.play-button {
+        background-color: $green;
+        border-radius: $button-radius;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        padding: $normal;
+        text-align: center;
+        transition: 0.3s linear all;
+    }
+
+    a.play-button:hover {
+        background-color: darken($green, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: $lg; 
+        //margin-bottom: 10px;
+        //text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #login-button {
+        background-color: $red;
+    }
+    #login-button:hover {
+        background-color: darken($red, 10%);
+        box-shadow: $shadow;
+    }
+    
+    #signup-button {
+        background-color: $blue;
+    }
+    #signup-button:hover {
+        background-color: darken($blue, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container .auth-buttons {
+        color: #fff;
+        cursor: pointer;
+        border-radius: $button-radius;
+        padding: $normal 0;
+        text-align: center;
+        transition: 0.3s linear all;
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home section {
+        padding: 0 $normal;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//Admins CSS Change this to own file later
+#admins {
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+
+    .table-container {
+        width: 100%;
+        max-height: 50px; /* Adjust the maximum height as needed */
+        overflow-y: scroll;
+    }
+    
+    .user-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .user-table th, .user-table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    
+    .user-table th {
+        background-color: #f2f2f2;
+    }
+
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      nav ul li a:hover {
+        color: #ffd700; /* Change color on hover */
+      }
+
+    section {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        padding-left: $md;
+        padding-right: $md;
+        height: 100%;
+        width: 35%;
+    }
+
+    .cube {
+        font-size: 8rem;
+        color: $orange;
+    }
+
+    h1 {
+        font-size: $lg;
+        font-weight: 400;
+        text-align: center;
+        color: $off-white;
+    }
+
+    .play-button-container {
+        width: 100%;
+    }
+
+    a.play-button {
+        background-color: $green;
+        border-radius: $button-radius;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        padding: $normal;
+        text-align: center;
+        transition: 0.3s linear all;
+    }
+
+    a.play-button:hover {
+        background-color: darken($green, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: $lg; 
+        //margin-bottom: 10px;
+        //text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #login-button {
+        background-color: $red;
+    }
+    #login-button:hover {
+        background-color: darken($red, 10%);
+        box-shadow: $shadow;
+    }
+    
+    #signup-button {
+        background-color: $blue;
+    }
+    #signup-button:hover {
+        background-color: darken($blue, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container .auth-buttons {
+        color: #fff;
+        cursor: pointer;
+        border-radius: $button-radius;
+        padding: $normal 0;
+        text-align: center;
+        transition: 0.3s linear all;
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #home section {
+        padding: 0 $normal;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//Student Login CSS Change this to own file later
+#studentlogin {
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+
+    .-button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        width: 615px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        gap: 10px;
+    }
+    
+    .-button:hover {
+        background-color: #0056b3;
+    }
+
+    .-Navbutton {
+        padding: 10px 20px;
+        background-color: #ec1f1f;
+        color: #fff;
+        border: none;
+        width: 615px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .-Navbutton:hover {
+        background-color: #0056b3;
+    }
+
+    .table-container {
+        width: 100%;
+        max-height: 50px; /* Adjust the maximum height as needed */
+        overflow-y: scroll;
+    }
+    
+    .user-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .user-table th, .user-table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    
+    .user-table th {
+        background-color: #f2f2f2;
+    }
+
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      nav ul li a:hover {
+        color: #ffd700; /* Change color on hover */
+      }
+
+    section {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        padding-left: $md;
+        padding-right: $md;
+        height: 100%;
+        width: 35%;
+    }
+
+    .cube {
+        font-size: 8rem;
+        color: $orange;
+    }
+
+    h1 {
+        font-size: $lg;
+        font-weight: 400;
+        text-align: center;
+        color: $off-white;
+    }
+
+    .play-button-container {
+        width: 100%;
+    }
+
+    a.play-button {
+        background-color: $green;
+        border-radius: $button-radius;
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        padding: $normal;
+        text-align: center;
+        transition: 0.3s linear all;
+    }
+
+    a.play-button:hover {
+        background-color: darken($green, 10%);
+        box-shadow: $shadow;
+    }
+
+    .auth-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: $lg; 
+        //margin-bottom: 10px;
+        //text-align: center;
+        align-items: center;
+        gap: 10px;
     }
 
     #login-button {

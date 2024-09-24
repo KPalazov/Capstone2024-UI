@@ -37,15 +37,15 @@ class QuizSummary extends Component {
         const userScore = this.state.score;
 
         if (userScore <= 30 ) {
-            remark = 'You need more practice!';
+            remark = 'You need a better understanding of the topics!';
         } else if (userScore > 30 && userScore <= 50) {
-            remark = 'Better luck next time!';
+            remark = 'You have a decent understanding of the topics!';
         } else if (userScore <= 70 && userScore > 50) {
-            remark = 'You can do better!';
+            remark = 'You have a great understanding of the topics!';
         } else if (userScore >= 71 && userScore <= 84) {
-            remark = 'You did great!';
+            remark = 'You have a perfect understanding of the topics!';
         } else {
-            remark = 'You\'re an absolute genius!';
+            remark = 'You are a master of the topic!';
         }
 
         if (state !== undefined) {
